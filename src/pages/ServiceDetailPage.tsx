@@ -54,7 +54,7 @@ export default function ServiceDetailPage({ staticSlug }: { staticSlug?: string 
             </div>
             <div>
               <h1 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-white leading-tight">
-                {service.title}
+                {service.title} in {businessInfo.city}, GA
               </h1>
               <p className="mt-3 text-base sm:text-lg text-white/70 leading-relaxed max-w-2xl">
                 {service.shortDescription}
@@ -76,7 +76,7 @@ export default function ServiceDetailPage({ staticSlug }: { staticSlug?: string 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
               <h2 className="font-display font-bold text-2xl sm:text-3xl text-navy-900 mb-6 leading-tight">
-                Professional {service.title} Services
+                Professional {service.title} in {businessInfo.city}, GA
               </h2>
               <p className="text-base text-charcoal-600 leading-relaxed mb-6">
                 {service.overview}
