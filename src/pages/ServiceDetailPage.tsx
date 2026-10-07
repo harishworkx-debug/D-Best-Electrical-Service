@@ -1,16 +1,18 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { Phone, CheckCircle, ArrowRight, Plug, Wrench, Cable, LayoutGrid, ToggleLeft, PlugZap, Lightbulb, Sun, Fan, ShieldCheck } from 'lucide-react';
+import { Phone, CheckCircle, ArrowRight, Plug, Wrench, Cable, LayoutGrid, ToggleLeft, PlugZap, Lightbulb, Sun, Fan, ShieldCheck, MapPin } from 'lucide-react';
 import SEO from '@/components/SEO';
 import CallToAction from '@/components/CallToAction';
 import FAQAccordion from '@/components/FAQAccordion';
-import { services, businessInfo } from '@/data/siteData';
+import { services, serviceAreas, businessInfo } from '@/data/siteData';
+import { serviceSeoContent } from '@/data/seoData';
 
 const iconMap: Record<string, any> = {
   Plug, Wrench, Cable, LayoutGrid, ToggleLeft, PlugZap, Lightbulb, Sun, Fan, ShieldCheck,
 };
 
-export default function ServiceDetailPage() {
-  const { slug } = useParams<{ slug: string }>();
+export default function ServiceDetailPage({ staticSlug }: { staticSlug?: string }) {
+  const params = useParams<{ slug: string }>();
+  const slug = staticSlug || params.slug;
   const service = services.find((s) => s.slug === slug);
 
   if (!service) return <Navigate to="/" replace />;
@@ -74,7 +76,7 @@ export default function ServiceDetailPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
               <h2 className="font-display font-bold text-2xl sm:text-3xl text-navy-900 mb-6 leading-tight">
-                Professional {service.title.toLowerCase()} in College Park, GA
+                Professional {service.title} Services
               </h2>
               <p className="text-base text-charcoal-600 leading-relaxed mb-6">
                 {service.overview}
@@ -179,6 +181,27 @@ export default function ServiceDetailPage() {
               <FAQAccordion faqs={service.faqs} />
             </div>
           </div>
+
+          {/* SEO Content Block */}
+          <div className="mt-16 bg-navy-50 rounded-2xl p-8 lg:p-12 border border-navy-100">
+            <h2 className="font-display font-bold text-2xl text-navy-900 mb-4">
+              Why High-Quality {service.title} Matters
+            </h2>
+            <div className="prose prose-navy max-w-none text-charcoal-600 leading-relaxed space-y-4">
+              {serviceSeoContent[service.slug]?.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              )) || (
+                <>
+                  <p>
+                    Your home's electrical system is a complex and crucial component of your daily life. Opting for professional {service.title.toLowerCase()} not only ensures that your devices and appliances operate at peak efficiency, but it also safeguards your property against potential hazards like electrical fires or shocks.
+                  </p>
+                  <p>
+                    Modern homes demand more power than ever before. Whether it's to support new smart home technologies, heavy-duty appliances, or a growing family, ensuring that your system can handle the load is paramount.
+                  </p>
+                </>
+              )}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -215,8 +238,28 @@ export default function ServiceDetailPage() {
         </section>
       )}
 
+        <section className="section-padding bg-charcoal-50">
+          <div className="container-max">
+            <h2 className="font-display font-bold text-2xl sm:text-3xl text-navy-900 mb-8 leading-tight text-center">
+              Areas We Serve
+            </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+              {serviceAreas.map((area) => (
+                <Link
+                  key={area.slug}
+                  to={`/${area.slug}`}
+                  className="flex items-center gap-2 p-3 rounded-lg bg-white shadow-sm border border-charcoal-100 hover:border-electric-300 hover:shadow-md transition-all"
+                >
+                  <MapPin className="w-4 h-4 text-electric-500 flex-shrink-0" />
+                  <span className="text-sm font-semibold text-navy-900">{area.name}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
       <CallToAction
-        title={`Need ${service.title.toLowerCase()} in College Park, GA?`}
+        title={`Need ${service.title.toLowerCase()}?`}
         description={`Call D Best Electrical Service to discuss your ${service.title.toLowerCase()} needs. We will arrange a visit and get the work done right.`}
       />
     </>

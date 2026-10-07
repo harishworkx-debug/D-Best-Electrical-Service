@@ -4,15 +4,17 @@ import SEO from '@/components/SEO';
 import CallToAction from '@/components/CallToAction';
 import FAQAccordion from '@/components/FAQAccordion';
 import { serviceAreas, services, businessInfo } from '@/data/siteData';
+import { areaSeoContent } from '@/data/seoData';
 
-export default function ServiceAreaDetailPage() {
-  const { slug } = useParams<{ slug: string }>();
+export default function ServiceAreaDetailPage({ staticSlug }: { staticSlug?: string }) {
+  const params = useParams<{ slug: string }>();
+  const slug = staticSlug || params.slug;
   const area = serviceAreas.find((a) => a.slug === slug);
 
   if (!area) return <Navigate to="/" replace />;
 
   const primaryService = services.find((s) => s.slug === area.primaryService);
-  const otherServices = services.filter((s) => s.slug !== area.primaryService).slice(0, 6);
+  const otherServices = services.filter((s) => s.slug !== area.primaryService);
 
   return (
     <>
@@ -174,7 +176,6 @@ export default function ServiceAreaDetailPage() {
                   <ul className="space-y-2">
                     {serviceAreas
                       .filter((a) => a.slug !== area.slug)
-                      .slice(0, 5)
                       .map((a) => (
                         <li key={a.slug}>
                           <Link
@@ -189,6 +190,27 @@ export default function ServiceAreaDetailPage() {
                   </ul>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* SEO Content Block */}
+          <div className="mt-16 bg-navy-50 rounded-2xl p-8 lg:p-12 border border-navy-100">
+            <h2 className="font-display font-bold text-2xl text-navy-900 mb-4">
+              Your Trusted Electrician in {area.name}
+            </h2>
+            <div className="prose prose-navy max-w-none text-charcoal-600 leading-relaxed space-y-4">
+              {areaSeoContent[area.slug]?.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              )) || (
+                <>
+                  <p>
+                    When it comes to maintaining a safe and efficient home in {area.name}, having a reliable local electrician is essential. At D Best Electrical Service, we understand the unique electrical needs of homes in this community.
+                  </p>
+                  <p>
+                    Our comprehensive electrical solutions are designed to ensure your property remains up to code and fully functional. From upgrading outdated electrical panels to seamlessly installing modern indoor and outdoor lighting systems, we prioritize safety and efficiency.
+                  </p>
+                </>
+              )}
             </div>
           </div>
         </div>

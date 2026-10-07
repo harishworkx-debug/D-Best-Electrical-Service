@@ -1,41 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dbestelectricalservice.com/</loc>
+    <loc>https://www.dbestelectricalservice.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://dbestelectricalservice.com/about</loc>
+    <loc>https://www.dbestelectricalservice.com/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dbestelectricalservice.com/contact</loc>
+    <loc>https://www.dbestelectricalservice.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dbestelectricalservice.com/faqs</loc>
+    <loc>https://www.dbestelectricalservice.com/faqs</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  <url><loc>https://dbestelectricalservice.com/electrical-installation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://dbestelectricalservice.com/electrical-repairs-troubleshooting</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://dbestelectricalservice.com/electrical-wiring-rewiring</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://dbestelectricalservice.com/electrical-panel-services</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://dbestelectricalservice.com/circuit-breaker-services</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://dbestelectricalservice.com/outlet-switch-installation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://dbestelectricalservice.com/indoor-lighting-installation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://dbestelectricalservice.com/outdoor-lighting-installation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://dbestelectricalservice.com/ceiling-fan-installation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://dbestelectricalservice.com/electrical-safety-inspections</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://dbestelectricalservice.com/college-park-ga</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://dbestelectricalservice.com/east-point-ga</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://dbestelectricalservice.com/union-city-ga</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://dbestelectricalservice.com/fairburn-ga</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://dbestelectricalservice.com/hapeville-ga</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://dbestelectricalservice.com/south-atlanta-ga</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://dbestelectricalservice.com/riverdale-ga</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://dbestelectricalservice.com/peachtree-city-ga</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url>
+    <loc>https://www.dbestelectricalservice.com/electrical-installation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dbestelectricalservice.com/electrical-repairs-troubleshooting</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dbestelectricalservice.com/electrical-wiring-rewiring</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dbestelectricalservice.com/electrical-panel-services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dbestelectricalservice.com/circuit-breaker-services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dbestelectricalservice.com/outlet-switch-installation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dbestelectricalservice.com/indoor-lighting-installation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dbestelectricalservice.com/outdoor-lighting-installation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dbestelectricalservice.com/ceiling-fan-installation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dbestelectricalservice.com/electrical-safety-inspections</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dbestelectricalservice.com/electrician-college-park-ga</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dbestelectricalservice.com/electrician-east-point-ga</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dbestelectricalservice.com/electrician-union-city-ga</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dbestelectricalservice.com/electrician-fairburn-ga</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dbestelectricalservice.com/electrician-hapeville-ga</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dbestelectricalservice.com/electrician-south-atlanta-ga</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dbestelectricalservice.com/electrician-riverdale-ga</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dbestelectricalservice.com/electrician-peachtree-city-ga</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dbestelectricalservice.com/electrician-lanett-al</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

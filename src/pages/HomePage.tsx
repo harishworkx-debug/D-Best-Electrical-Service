@@ -24,6 +24,7 @@ import SEO from '@/components/SEO';
 import CallToAction from '@/components/CallToAction';
 import FAQAccordion from '@/components/FAQAccordion';
 import { ServiceCard } from '@/components/PageHero';
+import Testimonials from '@/components/Testimonials';
 import {
   services,
   serviceAreas,
@@ -426,6 +427,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <Testimonials />
 
       {/* Service Area */}
       <section className="section-padding bg-charcoal-50">

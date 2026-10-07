@@ -6,7 +6,7 @@ export const businessInfo = {
   website: 'https://dbestelectricalservice.com/',
   googleMapsLink: 'https://maps.app.goo.gl/yvRf5kjx2muvp5Yw9',
   googleMapsEmbed:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.0!2d-84.4467!3d33.6524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM5JzA4LjYiTiA4NMKwMjYnNDguMSJX!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.671635829515!2d-84.41949808868465!3d33.58787397322417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4fc98a753df63%3A0x169586612bd7982d!2sD%20Best%20Electrical%20Service!5e0!3m2!1sen!2sin!4v1791357236134!5m2!1sen!2sin',
   city: 'College Park',
   state: 'Georgia',
 };
@@ -934,7 +934,7 @@ export interface ServiceAreaData {
 
 export const serviceAreas: ServiceAreaData[] = [
   {
-    slug: 'college-park-ga',
+    slug: 'electrician-college-park-ga',
     name: 'College Park, GA',
     primaryService: 'electrical-panel-services',
     description:
@@ -945,7 +945,7 @@ export const serviceAreas: ServiceAreaData[] = [
       'Local electrician serving College Park, GA. Panel upgrades, wiring, outlets, lighting, safety inspections. Call 404-397-9782.',
   },
   {
-    slug: 'east-point-ga',
+    slug: 'electrician-east-point-ga',
     name: 'East Point, GA',
     primaryService: 'electrical-repairs-troubleshooting',
     description:
@@ -956,7 +956,7 @@ export const serviceAreas: ServiceAreaData[] = [
       'Electrical repairs and troubleshooting in East Point, GA. Outlets, breakers, lighting, safety inspections. Call 404-397-9782.',
   },
   {
-    slug: 'union-city-ga',
+    slug: 'electrician-union-city-ga',
     name: 'Union City, GA',
     primaryService: 'outlet-switch-installation',
     description:
@@ -967,7 +967,7 @@ export const serviceAreas: ServiceAreaData[] = [
       'Outlet installation, switches, lighting, and electrical repairs in Union City, GA. Call 404-397-9782.',
   },
   {
-    slug: 'fairburn-ga',
+    slug: 'electrician-fairburn-ga',
     name: 'Fairburn, GA',
     primaryService: 'electrical-wiring-rewiring',
     description:
@@ -978,7 +978,7 @@ export const serviceAreas: ServiceAreaData[] = [
       'Electrical wiring, rewiring, panel upgrades, and repairs in Fairburn, GA. Call 404-397-9782.',
   },
   {
-    slug: 'hapeville-ga',
+    slug: 'electrician-hapeville-ga',
     name: 'Hapeville, GA',
     primaryService: 'indoor-lighting-installation',
     description:
@@ -989,7 +989,7 @@ export const serviceAreas: ServiceAreaData[] = [
       'Lighting installation, ceiling fans, outlets, and electrical repairs in Hapeville, GA. Call 404-397-9782.',
   },
   {
-    slug: 'south-atlanta-ga',
+    slug: 'electrician-south-atlanta-ga',
     name: 'South Atlanta, GA',
     primaryService: 'circuit-breaker-services',
     description:
@@ -1000,7 +1000,7 @@ export const serviceAreas: ServiceAreaData[] = [
       'Circuit breaker services, panel upgrades, and electrical repairs in South Atlanta, GA. Call 404-397-9782.',
   },
   {
-    slug: 'riverdale-ga',
+    slug: 'electrician-riverdale-ga',
     name: 'Riverdale, GA',
     primaryService: 'ceiling-fan-installation',
     description:
@@ -1011,7 +1011,7 @@ export const serviceAreas: ServiceAreaData[] = [
       'Ceiling fan installation, lighting, outlets, and electrical repairs in Riverdale, GA. Call 404-397-9782.',
   },
   {
-    slug: 'peachtree-city-ga',
+    slug: 'electrician-peachtree-city-ga',
     name: 'Peachtree City, GA',
     primaryService: 'outdoor-lighting-installation',
     description:
@@ -1020,6 +1020,17 @@ export const serviceAreas: ServiceAreaData[] = [
       'Electrician in Peachtree City, GA | D Best Electrical Service',
     metaDescription:
       'Outdoor lighting, landscape lighting, and electrical services in Peachtree City, GA. Call 404-397-9782.',
+  },
+  {
+    slug: 'electrician-lanett-al',
+    name: 'Lanett, AL',
+    primaryService: 'electrical-repairs-troubleshooting',
+    description:
+      'D Best Electrical Service provides residential electrical services to homeowners in Lanett, Alabama. Whether you need wiring repairs, lighting installation, panel upgrades, or troubleshooting, we handle the work safely and cleanly.',
+    metaTitle:
+      'Electrician in Lanett, AL | D Best Electrical Service',
+    metaDescription:
+      'Local electrician serving Lanett, AL. Electrical repairs, panel upgrades, wiring, outlets, and lighting. Call 404-397-9782.',
   },
 ];
 

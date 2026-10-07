@@ -19,10 +19,10 @@ export default function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
           {serviceSlugs.map((slug) => (
-            <Route key={`svc-${slug}`} path={`/${slug}`} element={<ServiceDetailPage />} />
+            <Route key={`svc-${slug}`} path={`/${slug}`} element={<ServiceDetailPage staticSlug={slug} />} />
           ))}
           {areaSlugs.map((slug) => (
-            <Route key={`area-${slug}`} path={`/${slug}`} element={<ServiceAreaDetailPage />} />
+            <Route key={`area-${slug}`} path={`/${slug}`} element={<ServiceAreaDetailPage staticSlug={slug} />} />
           ))}
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
