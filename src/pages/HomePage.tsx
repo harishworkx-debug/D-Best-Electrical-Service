@@ -96,7 +96,7 @@ export default function HomePage() {
                 <Phone className="w-5 h-5" />
                 Call {businessInfo.phoneDisplay}
               </a>
-              <Link to="/electrical-installation" className="btn-secondary">
+              <Link to="/electrical-installation-in-college-park-ga" className="btn-secondary">
                 Explore Electrical Services
                 <ArrowRight className="w-4 h-4" />
               </Link>
@@ -208,7 +208,7 @@ export default function HomePage() {
           </div>
 
           <div className="text-center mt-10">
-            <Link to="/electrical-repairs-troubleshooting" className="btn-navy">
+            <Link to="/electrical-repairs-troubleshooting-in-college-park-ga" className="btn-navy">
               Explore More Services
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -289,7 +289,7 @@ export default function HomePage() {
                   </li>
                 ))}
               </ul>
-              <Link to="/electrical-installation" className="btn-navy">
+              <Link to="/electrical-installation-in-college-park-ga" className="btn-navy">
                 Explore Electrical Installation
                 <ArrowRight className="w-4 h-4" />
               </Link>
@@ -372,7 +372,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
-              <Link to="/electrical-repairs-troubleshooting" className="btn-navy">
+              <Link to="/electrical-repairs-troubleshooting-in-college-park-ga" className="btn-navy">
                 Explore Repairs & Troubleshooting
                 <ArrowRight className="w-4 h-4" />
               </Link>

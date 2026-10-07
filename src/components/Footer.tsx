@@ -47,7 +47,7 @@ export default function Footer() {
               ))}
               <li>
                 <Link
-                  to={`/${services[6]?.slug || 'electrical-panel-services'}`}
+                  to={`/${services[6]?.slug || 'electrical-panel-services-in-college-park-ga'}`}
                   className="text-sm text-electric-400 font-medium hover:text-electric-300 transition-colors"
                 >
                   View More Services

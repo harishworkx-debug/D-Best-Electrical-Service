@@ -62,7 +62,7 @@ export default function FAQPage() {
                   service. Explore our services to learn more.
                 </p>
                 <Link
-                  to="/electrical-installation"
+                  to="/electrical-installation-in-college-park-ga"
                   className="inline-flex items-center gap-1 text-sm font-semibold text-electric-600 hover:text-electric-700 transition-colors"
                 >
                   Browse Services

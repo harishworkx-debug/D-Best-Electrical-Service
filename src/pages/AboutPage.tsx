@@ -192,7 +192,7 @@ export default function AboutPage() {
                 <Zap className="w-7 h-7 text-navy-900" fill="currentColor" />
               </div>
               <h3 className="font-display font-bold text-base text-white mb-2">Our Services</h3>
-              <Link to="/electrical-installation" className="text-sm text-electric-400 font-semibold hover:text-electric-300 transition-colors inline-flex items-center gap-1">
+              <Link to="/electrical-installation-in-college-park-ga" className="text-sm text-electric-400 font-semibold hover:text-electric-300 transition-colors inline-flex items-center gap-1">
                 Explore Services
                 <ArrowRight className="w-3 h-3" />
               </Link>

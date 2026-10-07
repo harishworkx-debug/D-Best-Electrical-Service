@@ -30,7 +30,7 @@ export interface ServiceData {
 
 export const services: ServiceData[] = [
   {
-    slug: 'electrical-installation',
+    slug: 'electrical-installation-in-college-park-ga',
     title: 'Electrical Installation',
     shortTitle: 'Electrical Installation',
     icon: 'Plug',
@@ -108,14 +108,14 @@ export const services: ServiceData[] = [
       },
     ],
     relatedServices: [
-      'electrical-wiring-rewiring',
-      'electrical-panel-services',
-      'outlet-switch-installation',
-      'indoor-lighting-installation',
+      'electrical-wiring-rewiring-in-college-park-ga',
+      'electrical-panel-services-in-college-park-ga',
+      'outlet-switch-installation-in-college-park-ga',
+      'indoor-lighting-installation-in-college-park-ga',
     ],
   },
   {
-    slug: 'electrical-repairs-troubleshooting',
+    slug: 'electrical-repairs-troubleshooting-in-college-park-ga',
     title: 'Electrical Repairs and Troubleshooting',
     shortTitle: 'Repairs & Troubleshooting',
     icon: 'Wrench',
@@ -198,14 +198,14 @@ export const services: ServiceData[] = [
       },
     ],
     relatedServices: [
-      'circuit-breaker-services',
-      'electrical-safety-inspections',
-      'outlet-switch-installation',
-      'electrical-wiring-rewiring',
+      'circuit-breaker-services-in-college-park-ga',
+      'electrical-safety-inspections-in-college-park-ga',
+      'outlet-switch-installation-in-college-park-ga',
+      'electrical-wiring-rewiring-in-college-park-ga',
     ],
   },
   {
-    slug: 'electrical-wiring-rewiring',
+    slug: 'electrical-wiring-rewiring-in-college-park-ga',
     title: 'Electrical Wiring and Rewiring',
     shortTitle: 'Wiring & Rewiring',
     icon: 'Cable',
@@ -288,14 +288,14 @@ export const services: ServiceData[] = [
       },
     ],
     relatedServices: [
-      'electrical-installation',
-      'electrical-panel-services',
-      'outlet-switch-installation',
-      'electrical-safety-inspections',
+      'electrical-installation-in-college-park-ga',
+      'electrical-panel-services-in-college-park-ga',
+      'outlet-switch-installation-in-college-park-ga',
+      'electrical-safety-inspections-in-college-park-ga',
     ],
   },
   {
-    slug: 'electrical-panel-services',
+    slug: 'electrical-panel-services-in-college-park-ga',
     title: 'Electrical Panel Services',
     shortTitle: 'Panel Services',
     icon: 'LayoutGrid',
@@ -378,14 +378,14 @@ export const services: ServiceData[] = [
       },
     ],
     relatedServices: [
-      'circuit-breaker-services',
-      'electrical-installation',
-      'electrical-wiring-rewiring',
-      'electrical-safety-inspections',
+      'circuit-breaker-services-in-college-park-ga',
+      'electrical-installation-in-college-park-ga',
+      'electrical-wiring-rewiring-in-college-park-ga',
+      'electrical-safety-inspections-in-college-park-ga',
     ],
   },
   {
-    slug: 'circuit-breaker-services',
+    slug: 'circuit-breaker-services-in-college-park-ga',
     title: 'Circuit Breaker Services',
     shortTitle: 'Circuit Breakers',
     icon: 'ToggleLeft',
@@ -467,14 +467,14 @@ export const services: ServiceData[] = [
       },
     ],
     relatedServices: [
-      'electrical-panel-services',
-      'electrical-repairs-troubleshooting',
-      'electrical-safety-inspections',
-      'outlet-switch-installation',
+      'electrical-panel-services-in-college-park-ga',
+      'electrical-repairs-troubleshooting-in-college-park-ga',
+      'electrical-safety-inspections-in-college-park-ga',
+      'outlet-switch-installation-in-college-park-ga',
     ],
   },
   {
-    slug: 'outlet-switch-installation',
+    slug: 'outlet-switch-installation-in-college-park-ga',
     title: 'Outlet and Switch Installation',
     shortTitle: 'Outlets & Switches',
     icon: 'PlugZap',
@@ -557,14 +557,14 @@ export const services: ServiceData[] = [
       },
     ],
     relatedServices: [
-      'electrical-installation',
-      'electrical-wiring-rewiring',
-      'indoor-lighting-installation',
-      'circuit-breaker-services',
+      'electrical-installation-in-college-park-ga',
+      'electrical-wiring-rewiring-in-college-park-ga',
+      'indoor-lighting-installation-in-college-park-ga',
+      'circuit-breaker-services-in-college-park-ga',
     ],
   },
   {
-    slug: 'indoor-lighting-installation',
+    slug: 'indoor-lighting-installation-in-college-park-ga',
     title: 'Indoor Lighting Installation',
     shortTitle: 'Indoor Lighting',
     icon: 'Lightbulb',
@@ -646,14 +646,14 @@ export const services: ServiceData[] = [
       },
     ],
     relatedServices: [
-      'outlet-switch-installation',
-      'ceiling-fan-installation',
-      'electrical-installation',
-      'outdoor-lighting-installation',
+      'outlet-switch-installation-in-college-park-ga',
+      'ceiling-fan-installation-in-college-park-ga',
+      'electrical-installation-in-college-park-ga',
+      'outdoor-lighting-installation-in-college-park-ga',
     ],
   },
   {
-    slug: 'outdoor-lighting-installation',
+    slug: 'outdoor-lighting-installation-in-college-park-ga',
     title: 'Outdoor Lighting Installation',
     shortTitle: 'Outdoor Lighting',
     icon: 'Sun',
@@ -735,14 +735,14 @@ export const services: ServiceData[] = [
       },
     ],
     relatedServices: [
-      'indoor-lighting-installation',
-      'outlet-switch-installation',
-      'electrical-installation',
-      'electrical-safety-inspections',
+      'indoor-lighting-installation-in-college-park-ga',
+      'outlet-switch-installation-in-college-park-ga',
+      'electrical-installation-in-college-park-ga',
+      'electrical-safety-inspections-in-college-park-ga',
     ],
   },
   {
-    slug: 'ceiling-fan-installation',
+    slug: 'ceiling-fan-installation-in-college-park-ga',
     title: 'Ceiling Fan Installation',
     shortTitle: 'Ceiling Fans',
     icon: 'Fan',
@@ -825,14 +825,14 @@ export const services: ServiceData[] = [
       },
     ],
     relatedServices: [
-      'indoor-lighting-installation',
-      'outlet-switch-installation',
-      'electrical-installation',
-      'outdoor-lighting-installation',
+      'indoor-lighting-installation-in-college-park-ga',
+      'outlet-switch-installation-in-college-park-ga',
+      'electrical-installation-in-college-park-ga',
+      'outdoor-lighting-installation-in-college-park-ga',
     ],
   },
   {
-    slug: 'electrical-safety-inspections',
+    slug: 'electrical-safety-inspections-in-college-park-ga',
     title: 'Electrical Safety Inspections and Diagnostics',
     shortTitle: 'Safety Inspections',
     icon: 'ShieldCheck',
@@ -915,10 +915,10 @@ export const services: ServiceData[] = [
       },
     ],
     relatedServices: [
-      'electrical-repairs-troubleshooting',
-      'electrical-panel-services',
-      'electrical-wiring-rewiring',
-      'circuit-breaker-services',
+      'electrical-repairs-troubleshooting-in-college-park-ga',
+      'electrical-panel-services-in-college-park-ga',
+      'electrical-wiring-rewiring-in-college-park-ga',
+      'circuit-breaker-services-in-college-park-ga',
     ],
   },
 ];
@@ -936,7 +936,7 @@ export const serviceAreas: ServiceAreaData[] = [
   {
     slug: 'electrician-college-park-ga',
     name: 'College Park, GA',
-    primaryService: 'electrical-panel-services',
+    primaryService: 'electrical-panel-services-in-college-park-ga',
     description:
       'D Best Electrical Service is based in College Park, Georgia, and provides electrical panel upgrades, wiring repairs, outlet installations, and safety inspections to homeowners throughout the College Park area. As a local electrical service provider, we are familiar with the housing stock in the area — from mid-century homes that may benefit from panel upgrades to newer construction that needs additional circuits or fixture installations.',
     metaTitle:
@@ -947,7 +947,7 @@ export const serviceAreas: ServiceAreaData[] = [
   {
     slug: 'electrician-east-point-ga',
     name: 'East Point, GA',
-    primaryService: 'electrical-repairs-troubleshooting',
+    primaryService: 'electrical-repairs-troubleshooting-in-college-park-ga',
     description:
       'We provide electrical repair and troubleshooting services to homeowners in East Point, Georgia. From outlets that have stopped working to breakers that trip repeatedly, we diagnose the problem and make durable repairs. We also handle lighting installations, ceiling fan installations, and safety inspections for East Point residents.',
     metaTitle:
@@ -958,7 +958,7 @@ export const serviceAreas: ServiceAreaData[] = [
   {
     slug: 'electrician-union-city-ga',
     name: 'Union City, GA',
-    primaryService: 'outlet-switch-installation',
+    primaryService: 'outlet-switch-installation-in-college-park-ga',
     description:
       'Homeowners in Union City, Georgia can count on D Best Electrical Service for outlet and switch installation, GFCI protection upgrades, lighting installations, and electrical safety inspections. Whether you need additional outlets for a growing household or want to update old switches to modern dimmers, we handle the installation safely and cleanly.',
     metaTitle:
@@ -969,7 +969,7 @@ export const serviceAreas: ServiceAreaData[] = [
   {
     slug: 'electrician-fairburn-ga',
     name: 'Fairburn, GA',
-    primaryService: 'electrical-wiring-rewiring',
+    primaryService: 'electrical-wiring-rewiring-in-college-park-ga',
     description:
       'D Best Electrical Service provides wiring and rewiring services to homes in Fairburn, Georgia. If your home has aging wiring, insufficient circuits, or ungrounded outlets, we assess the system and replace what needs to be replaced with modern, code-compliant wiring. We also handle panel upgrades, lighting, and general electrical repairs in the Fairburn area.',
     metaTitle:
@@ -980,7 +980,7 @@ export const serviceAreas: ServiceAreaData[] = [
   {
     slug: 'electrician-hapeville-ga',
     name: 'Hapeville, GA',
-    primaryService: 'indoor-lighting-installation',
+    primaryService: 'indoor-lighting-installation-in-college-park-ga',
     description:
       'For homeowners in Hapeville, Georgia, D Best Electrical Service provides indoor lighting installation, ceiling fan installation, outlet and switch upgrades, and electrical troubleshooting. From recessed lighting to dimmer switches to new fixtures, we install lighting that improves the look and function of your home.',
     metaTitle:
@@ -991,7 +991,7 @@ export const serviceAreas: ServiceAreaData[] = [
   {
     slug: 'electrician-south-atlanta-ga',
     name: 'South Atlanta, GA',
-    primaryService: 'circuit-breaker-services',
+    primaryService: 'circuit-breaker-services-in-college-park-ga',
     description:
       'We provide circuit breaker services, panel inspections, and electrical repairs to homeowners in the South Atlanta area. If your breakers are tripping, your panel needs updating, or you need additional circuits, we diagnose the issue and make the right repair. We also handle lighting, outlets, and safety inspections.',
     metaTitle:
@@ -1002,7 +1002,7 @@ export const serviceAreas: ServiceAreaData[] = [
   {
     slug: 'electrician-riverdale-ga',
     name: 'Riverdale, GA',
-    primaryService: 'ceiling-fan-installation',
+    primaryService: 'ceiling-fan-installation-in-college-park-ga',
     description:
       'D Best Electrical Service serves homeowners in Riverdale, Georgia with ceiling fan installation, indoor and outdoor lighting, outlet installation, and electrical troubleshooting. We install fan-rated boxes, wire fans with light kits, and set up the control method that works best for your space.',
     metaTitle:
@@ -1013,7 +1013,7 @@ export const serviceAreas: ServiceAreaData[] = [
   {
     slug: 'electrician-peachtree-city-ga',
     name: 'Peachtree City, GA',
-    primaryService: 'outdoor-lighting-installation',
+    primaryService: 'outdoor-lighting-installation-in-college-park-ga',
     description:
       'For homeowners in Peachtree City, Georgia, D Best Electrical Service provides outdoor lighting installation, landscape lighting, security lighting, and exterior outlet installation. We also handle indoor lighting, ceiling fans, panel upgrades, and general electrical repairs. All outdoor installations use weather-rated fixtures and GFCI protection.',
     metaTitle:
@@ -1024,7 +1024,7 @@ export const serviceAreas: ServiceAreaData[] = [
   {
     slug: 'electrician-lanett-al',
     name: 'Lanett, AL',
-    primaryService: 'electrical-repairs-troubleshooting',
+    primaryService: 'electrical-repairs-troubleshooting-in-college-park-ga',
     description:
       'D Best Electrical Service provides residential electrical services to homeowners in Lanett, Alabama. Whether you need wiring repairs, lighting installation, panel upgrades, or troubleshooting, we handle the work safely and cleanly.',
     metaTitle:

@@ -1,50 +1,50 @@
 export const serviceSeoContent: Record<string, string[]> = {
-  'electrical-installation': [
+  'electrical-installation-in-college-park-ga': [
     "Electrical installation is a critical step in ensuring long-term safety and functionality in your home. A poorly executed installation can lead to severe issues, including fire hazards and power surges. That is why having licensed professionals handle everything from basic wiring to complex panel setups is absolutely non-negotiable.",
     "Our team meticulously plans every installation project. We start by assessing your current power load and future energy needs, ensuring that the infrastructure we build can support modern smart home technologies and heavy-duty appliances without breaking a sweat.",
     "Furthermore, we strictly adhere to the National Electrical Code (NEC) and all local building regulations. By investing in our top-tier installation services, you are not just getting a quick fix—you are securing the foundation of your property's electrical health for decades to come."
   ],
-  'electrical-repairs-troubleshooting': [
+  'electrical-repairs-troubleshooting-in-college-park-ga': [
     "Dealing with electrical problems like flickering lights, dead outlets, or frequently tripping breakers can be incredibly frustrating and dangerous. Our troubleshooting services are designed to pinpoint the exact root cause of the issue rather than just applying a temporary band-aid.",
     "Using state-of-the-art diagnostic equipment, our technicians meticulously trace circuits to identify hidden faults inside your walls. This thorough approach allows us to detect deteriorating insulation, loose connections, or overloaded circuits before they escalate into major emergencies.",
     "Once the problem is identified, we provide transparent, durable repair solutions. We prioritize your safety and peace of mind, ensuring that every repair is tested under load and verified to perform flawlessly under everyday conditions."
   ],
-  'electrical-wiring-rewiring': [
+  'electrical-wiring-rewiring-in-college-park-ga': [
     "Outdated wiring is one of the leading causes of electrical fires in older homes. If your property still relies on knob-and-tube, aluminum wiring, or ungrounded two-prong systems, a comprehensive rewiring project is highly recommended to protect your family and your investment.",
     "We specialize in minimally invasive rewiring techniques, routing new, high-capacity copper wiring through your walls, attics, and crawlspaces with precision. Our goal is to bring your home up to modern safety standards while minimizing disruption to your daily life.",
     "A newly rewired home not only drastically reduces the risk of electrical hazards but also provides the capacity needed for today's power-hungry electronics. Enjoy stable, clean power and significantly lower your home insurance premiums by upgrading your wiring today."
   ],
-  'electrical-panel-services': [
+  'electrical-panel-services-in-college-park-ga': [
     "Your electrical panel is the beating heart of your home's power distribution. When it becomes outdated, corroded, or overloaded, the entire system is put at risk. Upgrading your panel is one of the most effective ways to enhance the safety and capability of your electrical infrastructure.",
     "We evaluate your current and anticipated energy usage to recommend the perfect panel size—often upgrading homes to robust 200-amp systems. This provides ample space for dedicated circuits, EV chargers, and new HVAC units.",
     "In addition to full panel replacements, we offer sub-panel installations and comprehensive maintenance. Every panel we install is meticulously labeled, properly grounded, and tested to ensure it provides flawless protection against overcurrents and short circuits."
   ],
-  'circuit-breaker-services': [
+  'circuit-breaker-services-in-college-park-ga': [
     "Circuit breakers are your first line of defense against electrical overloads and short circuits. When a breaker trips frequently, it is a clear warning sign that your circuit is drawing more power than it can safely handle, or that the breaker itself has degraded.",
     "Our experts quickly diagnose whether the issue lies with an overloaded circuit, a ground fault, or a faulty breaker. We replace old or malfunctioning breakers with modern, high-reliability units, ensuring your system responds accurately to electrical anomalies.",
     "We also specialize in upgrading standard breakers to AFCI (Arc Fault Circuit Interrupter) and GFCI (Ground Fault Circuit Interrupter) breakers, providing enhanced protection against electrical fires and lethal shocks in critical areas of your home."
   ],
-  'outlet-switch-installation': [
+  'outlet-switch-installation-in-college-park-ga': [
     "Conveniently placed outlets and modern switches can completely transform the functionality of a room. Whether you are tired of relying on dangerous extension cords or want to upgrade to smart lighting controls, professional installation is key.",
     "We install a wide variety of receptacles, including tamper-resistant outlets for child safety, USB-integrated outlets for convenience, and GFCI outlets for wet areas like kitchens and bathrooms. Every device is securely mounted and properly grounded.",
     "Beyond basic functionality, we offer aesthetic upgrades like dimmer switches, motion sensors, and smart switches that integrate with your home automation system. Enhance your comfort, improve energy efficiency, and customize your lighting experience with our expert installations."
   ],
-  'indoor-lighting-installation': [
+  'indoor-lighting-installation-in-college-park-ga': [
     "The right indoor lighting does more than just illuminate a room; it sets the mood, highlights architectural features, and improves productivity. From elegant chandeliers in the dining room to sleek recessed lighting in the kitchen, we bring your vision to life.",
     "Our installation process begins with a detailed consultation to understand your design goals and lighting requirements. We expertly handle all wiring, ensuring that heavy fixtures are supported by fan-rated or reinforced ceiling boxes for maximum safety.",
     "We also focus on energy efficiency, strongly recommending and installing LED lighting systems. Combined with advanced dimming controls, our indoor lighting solutions provide brilliant illumination while significantly reducing your monthly energy consumption."
   ],
-  'outdoor-lighting-installation': [
+  'outdoor-lighting-installation-in-college-park-ga': [
     "Outdoor lighting is essential for enhancing the curb appeal, usability, and security of your property after dark. A well-designed exterior lighting system deters intruders and creates a welcoming ambiance for guests.",
     "We install a diverse range of outdoor fixtures, including motion-sensor security floodlights, elegant pathway lighting, and dramatic landscape uplighting. Every outdoor installation utilizes premium, weather-rated fixtures and is protected by GFCI circuits to withstand the elements.",
     "Our team strategically places transformers, buries low-voltage cabling, and sets up automated timers or photocells. This ensures your outdoor spaces are beautifully illuminated exactly when needed, providing both aesthetic beauty and unparalleled peace of mind."
   ],
-  'ceiling-fan-installation': [
+  'ceiling-fan-installation-in-college-park-ga': [
     "Ceiling fans are an incredibly energy-efficient way to maintain comfort in your home year-round. However, improper installation can lead to annoying wobbles, noisy operation, or even catastrophic fixture failure if the ceiling box is inadequate.",
     "We strictly use heavy-duty, fan-rated mounting boxes that are securely braced to your ceiling joists. This guarantees that your new ceiling fan operates smoothly, quietly, and safely, regardless of its size or weight.",
     "In addition to the physical mounting, we expertly wire your fan to accommodate separate wall switches for the motor and the light kit, or set up seamless remote control operation. Upgrade your home's air circulation with our flawless ceiling fan installation services."
   ],
-  'electrical-safety-inspections': [
+  'electrical-safety-inspections-in-college-park-ga': [
     "An electrical safety inspection is a comprehensive health check for your home's power system. Whether you are buying a new property, renovating an old one, or just want peace of mind, identifying hidden hazards is crucial for preventing fires and costly damage.",
     "Our rigorous inspection process covers every critical component: the main service panel, grounding systems, wiring insulation, GFCI/AFCI protection, and representative outlets. We use advanced diagnostic tools to uncover issues that are invisible to the naked eye.",
     "Following the inspection, we provide a detailed, easy-to-understand report outlining any code violations or safety concerns. We prioritize transparency, offering honest recommendations without high-pressure sales tactics, so you can make informed decisions about your home's safety."
