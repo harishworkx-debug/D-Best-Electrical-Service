@@ -26,8 +26,7 @@ let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 staticPages.forEach(page => {
   sitemap += `  <url>
     <loc>${DOMAIN}${page}</loc>
-    <changefreq>weekly</changefreq>
-    <priority>${page === '' ? '1.0' : '0.8'}</priority>
+    <lastmod>2026-10-08</lastmod>
   </url>\n`;
 });
 
@@ -35,8 +34,7 @@ staticPages.forEach(page => {
 services.forEach(service => {
   sitemap += `  <url>
     <loc>${DOMAIN}/${service.slug}</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-10-08</lastmod>
   </url>\n`;
 });
 
@@ -44,8 +42,7 @@ services.forEach(service => {
 serviceAreas.forEach(area => {
   sitemap += `  <url>
     <loc>${DOMAIN}/${area.slug}</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-10-08</lastmod>
   </url>\n`;
 });
 

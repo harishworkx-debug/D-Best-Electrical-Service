@@ -27,6 +27,12 @@ export default function ServiceDetailPage({ staticSlug }: { staticSlug?: string 
         title={service.metaTitle}
         description={service.metaDescription}
         canonicalPath={service.slug}
+        breadcrumbs={[
+          { name: 'Home', url: 'https://dbestelectricalservice.com/' },
+          { name: 'Electrical Services', url: 'https://dbestelectricalservice.com/#services' },
+          { name: service.shortTitle, url: `https://dbestelectricalservice.com/${service.slug}` },
+          { name: `${businessInfo.city}, GA`, url: `https://dbestelectricalservice.com/${service.slug}` }
+        ]}
       />
 
       {/* Hero */}
@@ -40,10 +46,14 @@ export default function ServiceDetailPage({ staticSlug }: { staticSlug?: string 
           <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-900/95 to-navy-900/70" />
         </div>
         <div className="container-max relative z-10 px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
-          <nav className="mb-4 flex items-center gap-2 text-xs text-white/50">
+          <nav className="mb-4 flex flex-wrap items-center gap-2 text-xs text-white/50">
             <Link to="/" className="hover:text-electric-400 transition-colors">Home</Link>
-            <span>/</span>
+            <span className="text-[10px]">&gt;</span>
+            <Link to="/#services" className="hover:text-electric-400 transition-colors">Electrical Services</Link>
+            <span className="text-[10px]">&gt;</span>
             <span className="text-white/70">{service.shortTitle}</span>
+            <span className="text-[10px]">&gt;</span>
+            <span className="text-white/90 font-medium">{businessInfo.city}, GA</span>
           </nav>
           <div className="flex items-start gap-4">
             <div className="w-14 h-14 rounded-xl bg-electric-400 flex items-center justify-center flex-shrink-0">
@@ -148,18 +158,35 @@ export default function ServiceDetailPage({ staticSlug }: { staticSlug?: string 
         </div>
       </section>
 
-      {/* Service Image */}
-      <section className="bg-charcoal-50 py-12">
-        <div className="container-max">
-          <div className="rounded-2xl overflow-hidden shadow-2xl shadow-navy-900/10">
-            <img
-              src={service.heroImage}
-              alt={service.heroAlt}
-              className="w-full h-[300px] sm:h-[400px] object-cover"
-            />
+      {/* Service Gallery / Image */}
+      {service.gallery && service.gallery.length > 0 ? (
+        <section className="section-padding bg-charcoal-50">
+          <div className="container-max">
+            <h2 className="font-display font-bold text-2xl sm:text-3xl text-navy-900 mb-8 leading-tight text-center">
+              Real Project Photos
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {service.gallery.map((img, i) => (
+                <div key={i} className="rounded-2xl overflow-hidden shadow-xl aspect-video">
+                  <img src={img} alt={`${service.shortTitle} project photo ${i + 1}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : (
+        <section className="bg-charcoal-50 py-12">
+          <div className="container-max">
+            <div className="rounded-2xl overflow-hidden shadow-2xl shadow-navy-900/10">
+              <img
+                src={service.heroImage}
+                alt={service.heroAlt}
+                className="w-full h-[300px] sm:h-[400px] object-cover"
+              />
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* FAQs */}
       <section className="section-padding bg-white">
@@ -241,7 +268,7 @@ export default function ServiceDetailPage({ staticSlug }: { staticSlug?: string 
         <section className="section-padding bg-charcoal-50">
           <div className="container-max">
             <h2 className="font-display font-bold text-2xl sm:text-3xl text-navy-900 mb-8 leading-tight text-center">
-              Areas We Serve
+              Also Serving
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
               {serviceAreas.map((area) => (

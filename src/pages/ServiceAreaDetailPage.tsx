@@ -13,8 +13,27 @@ export default function ServiceAreaDetailPage({ staticSlug }: { staticSlug?: str
 
   if (!area) return <Navigate to="/" replace />;
 
+  const areaIndex = serviceAreas.findIndex((a) => a.slug === slug);
+  const heroImages = [
+    'https://images.pexels.com/photos/17842832/pexels-photo-17842832.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    'https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    'https://images.pexels.com/photos/3615735/pexels-photo-3615735.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    'https://images.pexels.com/photos/28950842/pexels-photo-28950842.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    'https://images.pexels.com/photos/27928760/pexels-photo-27928760.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    'https://images.pexels.com/photos/5691494/pexels-photo-5691494.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    'https://images.pexels.com/photos/7518747/pexels-photo-7518747.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    'https://images.pexels.com/photos/4933643/pexels-photo-4933643.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    'https://images.pexels.com/photos/6835102/pexels-photo-6835102.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  ];
+  const heroImage = heroImages[areaIndex % heroImages.length];
+
   const primaryService = services.find((s) => s.slug === area.primaryService);
   const otherServices = services.filter((s) => s.slug !== area.primaryService);
+  
+  // Deterministically shuffle 'otherServices' to vary content across city pages
+  const shuffledOtherServices = [...otherServices].sort((a, b) => {
+    return (a.slug.length + areaIndex) % 2 === 0 ? 1 : -1;
+  }).slice(0, 4);
 
   return (
     <>
@@ -22,23 +41,30 @@ export default function ServiceAreaDetailPage({ staticSlug }: { staticSlug?: str
         title={area.metaTitle}
         description={area.metaDescription}
         canonicalPath={area.slug}
+        breadcrumbs={[
+          { name: 'Home', url: 'https://dbestelectricalservice.com/' },
+          { name: 'Areas We Serve', url: 'https://dbestelectricalservice.com/#areas' },
+          { name: area.name, url: `https://dbestelectricalservice.com/${area.slug}` }
+        ]}
       />
 
       {/* Hero */}
       <section className="relative bg-navy-900 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/17842832/pexels-photo-17842832.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-            alt="Engineer in safety gear working on an outdoor electrical panel"
+            src={heroImage}
+            alt={`Electrician working on a project in ${area.name}`}
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-900/95 to-navy-900/70" />
         </div>
         <div className="container-max relative z-10 px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
-          <nav className="mb-4 flex items-center gap-2 text-xs text-white/50">
+          <nav className="mb-4 flex flex-wrap items-center gap-2 text-xs text-white/50">
             <Link to="/" className="hover:text-electric-400 transition-colors">Home</Link>
-            <span>/</span>
-            <span className="text-white/70">{area.name}</span>
+            <span className="text-[10px]">&gt;</span>
+            <Link to="/#areas" className="hover:text-electric-400 transition-colors">Areas We Serve</Link>
+            <span className="text-[10px]">&gt;</span>
+            <span className="text-white/90 font-medium">{area.name}</span>
           </nav>
           <div className="flex items-start gap-4">
             <div className="w-14 h-14 rounded-xl bg-electric-400 flex items-center justify-center flex-shrink-0">
@@ -101,10 +127,10 @@ export default function ServiceAreaDetailPage({ staticSlug }: { staticSlug?: str
               )}
 
               <h3 className="font-display font-bold text-xl text-navy-900 mb-4">
-                Other Services Available in {area.name}
+                Electrical Services in {area.name}
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-                {otherServices.map((s) => (
+                {shuffledOtherServices.map((s) => (
                   <Link
                     key={s.slug}
                     to={`/${s.slug}`}
@@ -112,7 +138,7 @@ export default function ServiceAreaDetailPage({ staticSlug }: { staticSlug?: str
                   >
                     <CheckCircle className="w-4 h-4 text-electric-500 flex-shrink-0" />
                     <span className="text-sm text-navy-900 group-hover:text-navy-700 transition-colors">
-                      {s.shortTitle}
+                      {s.shortTitle} in {area.name}
                     </span>
                   </Link>
                 ))}
@@ -157,17 +183,7 @@ export default function ServiceAreaDetailPage({ staticSlug }: { staticSlug?: str
                   </Link>
                 </div>
 
-                <div className="rounded-xl overflow-hidden shadow-lg">
-                  <iframe
-                    src={businessInfo.googleMapsEmbed}
-                    width="100%"
-                    height="200"
-                    style={{ border: 0 }}
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title={`Map of ${area.name}`}
-                  />
-                </div>
+
 
                 <div className="card p-6">
                   <h3 className="font-display font-bold text-base text-navy-900 mb-3">
@@ -200,7 +216,7 @@ export default function ServiceAreaDetailPage({ staticSlug }: { staticSlug?: str
             </h2>
             <div className="prose prose-navy max-w-none text-charcoal-600 leading-relaxed space-y-4">
               {areaSeoContent[area.slug]?.map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
+                <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }} />
               )) || (
                 <>
                   <p>

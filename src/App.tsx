@@ -7,6 +7,8 @@ import AboutPage from '@/pages/AboutPage';
 import ContactPage from '@/pages/ContactPage';
 import FAQPage from '@/pages/FAQPage';
 import NotFoundPage from '@/pages/NotFoundPage';
+import ServicesPage from '@/pages/ServicesPage';
+import AreasWeServePage from '@/pages/AreasWeServePage';
 import { services, serviceAreas } from '@/data/siteData';
 
 export default function App() {
@@ -24,6 +26,8 @@ export default function App() {
           {areaSlugs.map((slug) => (
             <Route key={`area-${slug}`} path={`/${slug}`} element={<ServiceAreaDetailPage staticSlug={slug} />} />
           ))}
+          <Route path="/electrical-services" element={<ServicesPage />} />
+          <Route path="/areas-we-serve" element={<AreasWeServePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/faqs" element={<FAQPage />} />

@@ -8,7 +8,7 @@ export default function NotFoundPage() {
     <>
       <SEO
         title="Page Not Found | D Best Electrical Service"
-        description="The page you are looking for could not be found. Please visit our homepage or call 404-397-9782."
+        description="The page you are looking for could not be found. Please visit our homepage or call 470-414-6473."
       />
       <section className="min-h-[60vh] flex items-center bg-navy-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">

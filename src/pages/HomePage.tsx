@@ -57,8 +57,8 @@ export default function HomePage() {
   return (
     <>
       <SEO
-        title="D Best Electrical Service | Electrician in College Park, GA"
-        description="Professional residential electrical services in College Park, GA. Installation, repairs, wiring, panels, lighting, safety inspections. Call 404-397-9782."
+        title="Electrician in College Park, GA | D Best Electrical Service"
+        description="Professional residential electrical services in College Park, GA. Installation, repairs, wiring, panels, lighting, safety inspections. Call 470-414-6473."
       />
 
       {/* Hero Section */}
@@ -82,7 +82,7 @@ export default function HomePage() {
             </div>
 
             <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white leading-[1.1] mb-6 animate-fade-up">
-              Reliable Electrical Service for Your Home
+              Trusted Residential Electrician in College Park, GA
             </h1>
 
             <p className="text-lg text-white/70 leading-relaxed mb-8 max-w-xl animate-fade-up" style={{ animationDelay: '0.1s' }}>
@@ -117,67 +117,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Business Introduction */}
-      <section className="section-padding bg-white">
-        <div className="container-max">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div>
-              <span className="text-sm font-bold text-electric-600 uppercase tracking-wide">
-                About D Best Electrical Service
-              </span>
-              <h2 className="font-display font-bold text-3xl sm:text-4xl text-navy-900 mt-2 mb-6 leading-tight">
-                Local Electrical Service You Can Trust
-              </h2>
-              <p className="text-base text-charcoal-600 leading-relaxed mb-4">
-                D Best Electrical Service is a College Park, Georgia-based electrical service
-                provider serving homeowners throughout the south metro Atlanta area. We handle
-                everything from installing a single outlet to upgrading an electrical panel to
-                rewiring an older home.
-              </p>
-              <p className="text-base text-charcoal-600 leading-relaxed mb-6">
-                Our approach is straightforward: we listen to what you need, assess the situation
-                in person, explain the work clearly, and do it carefully. No pressure, no
-                exaggeration, and no cutting corners. Every connection is made up securely and
-                every circuit is tested before we leave.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/about" className="btn-navy">
-                  Learn About Us
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-                <Link to="/contact" className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-charcoal-200 px-6 py-3 text-sm font-bold text-navy-900 transition-all hover:border-navy-300 hover:bg-charcoal-50">
-                  Contact Us
-                </Link>
-              </div>
-            </div>
 
-            <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-2xl shadow-navy-900/10">
-                <img
-                  src="https://images.pexels.com/photos/27928762/pexels-photo-27928762.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                  alt="Professional electrician using a drill on an indoor circuit breaker panel"
-                  className="w-full h-[400px] object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-5 max-w-[240px] hidden sm:block">
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-lg bg-electric-400 flex items-center justify-center flex-shrink-0">
-                    <ShieldCheck className="w-6 h-6 text-navy-900" />
-                  </div>
-                  <div>
-                    <div className="font-display font-bold text-sm text-navy-900">
-                      Safety First
-                    </div>
-                    <div className="text-xs text-charcoal-500 mt-0.5">
-                      Every circuit tested before we leave
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Featured Services */}
       <section className="section-padding bg-charcoal-50">
@@ -431,7 +371,34 @@ export default function HomePage() {
       {/* Testimonials */}
       <Testimonials />
 
+      {/* Real Job Photos Section */}
+      <section className="section-padding bg-navy-900 relative">
+        <div className="container-max text-center mb-12">
+          <span className="text-sm font-bold text-electric-400 uppercase tracking-wide">
+            Our Work
+          </span>
+          <h2 className="font-display font-bold text-3xl sm:text-4xl text-white mt-2 mb-4 leading-tight">
+            Real Projects, Real Results
+          </h2>
+          <p className="text-base text-white/60 leading-relaxed max-w-2xl mx-auto">
+            Take a look at some of the recent electrical panels, lighting installations, and wiring projects we have completed for homeowners in College Park.
+          </p>
+        </div>
+        <div className="container-max grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            { src: 'https://images.pexels.com/photos/28950842/pexels-photo-28950842.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'Neatly organized electrical panel installation' },
+            { src: 'https://images.pexels.com/photos/7518747/pexels-photo-7518747.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'Indoor lighting fixture installation' },
+            { src: 'https://images.pexels.com/photos/4933643/pexels-photo-4933643.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'Outdoor landscape and security lighting' }
+          ].map((img, i) => (
+            <div key={i} className="rounded-xl overflow-hidden shadow-xl aspect-video">
+              <img src={img.src} alt={img.alt} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Service Area */}
+
       <section className="section-padding bg-charcoal-50">
         <div className="container-max">
           <div className="text-center max-w-2xl mx-auto mb-12">
@@ -461,7 +428,7 @@ export default function HomePage() {
           </div>
 
           <div className="text-center mt-10">
-            <Link to="/college-park-ga" className="btn-navy">
+            <Link to="/areas-we-serve" className="btn-navy">
               Explore Service Areas
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -496,10 +463,80 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Business Introduction / About */}
+      <section className="section-padding bg-charcoal-50">
+        <div className="container-max">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div>
+              <span className="text-sm font-bold text-electric-600 uppercase tracking-wide">
+                About D Best Electrical Service
+              </span>
+              <h2 className="font-display font-bold text-3xl sm:text-4xl text-navy-900 mt-2 mb-6 leading-tight">
+                Local Electrical Service You Can Trust
+              </h2>
+              <p className="text-base text-charcoal-600 leading-relaxed mb-4">
+                D Best Electrical Service is a fully licensed and insured electrical service provider based in College Park, GA. With years of hands-on experience, we handle everything from single outlet installations to complex whole-home rewires.
+              </p>
+              <p className="text-base text-charcoal-600 leading-relaxed mb-6">
+                We believe in providing honest, high-quality workmanship. No pressure, no upselling, just safe and reliable electrical work done right the first time. We are committed to the safety and satisfaction of every customer we serve.
+              </p>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-electric-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-charcoal-700">Fully Licensed & Insured Professionals</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-electric-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-charcoal-700">Years of Residential Electrical Experience</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-electric-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-charcoal-700">Exact Pricing With No Hidden Fees</span>
+                </li>
+              </ul>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link to="/about" className="btn-navy">
+                  Learn About Us
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+                <Link to="/contact" className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-charcoal-200 px-6 py-3 text-sm font-bold text-navy-900 transition-all hover:border-navy-300 hover:bg-charcoal-50">
+                  Contact Us
+                </Link>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="rounded-2xl overflow-hidden shadow-2xl shadow-navy-900/10">
+                <img
+                  src="https://images.pexels.com/photos/27928762/pexels-photo-27928762.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                  alt="Professional electrician using a drill on an indoor circuit breaker panel"
+                  className="w-full h-[400px] object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-5 max-w-[240px] hidden sm:block">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-lg bg-electric-400 flex items-center justify-center flex-shrink-0">
+                    <ShieldCheck className="w-6 h-6 text-navy-900" />
+                  </div>
+                  <div>
+                    <div className="font-display font-bold text-sm text-navy-900">
+                      Safety First
+                    </div>
+                    <div className="text-xs text-charcoal-500 mt-0.5">
+                      Every circuit tested before we leave
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <CallToAction
         title="Ready to Get Started?"
-        description="Call D Best Electrical Service today to discuss your electrical needs. We will arrange a visit and take care of the work with care and professionalism."
+        description={`Call D Best Electrical Service at ${businessInfo.phoneDisplay} today to discuss your electrical needs. We will arrange a visit and take care of the work with care and professionalism.`}
       />
     </>
   );

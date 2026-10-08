@@ -1,14 +1,15 @@
 export const businessInfo = {
   name: 'D Best Electrical Service',
   address: '1102 Dayna Dr, College Park, GA 30349, United States',
-  phoneDisplay: '404-397-9782',
-  phoneLink: 'tel:4043979782',
+  phoneDisplay: '470-414-6473',
+  phoneLink: 'tel:4704146473',
   website: 'https://dbestelectricalservice.com/',
   googleMapsLink: 'https://maps.app.goo.gl/yvRf5kjx2muvp5Yw9',
   googleMapsEmbed:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.671635829515!2d-84.41949808868465!3d33.58787397322417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4fc98a753df63%3A0x169586612bd7982d!2sD%20Best%20Electrical%20Service!5e0!3m2!1sen!2sin!4v1791357236134!5m2!1sen!2sin',
   city: 'College Park',
   state: 'Georgia',
+  hours: 'Monday - Friday: 8:00 AM - 6:00 PM | Saturday: By Appointment | Sunday: Closed',
 };
 
 export interface ServiceData {
@@ -39,7 +40,7 @@ export const services: ServiceData[] = [
     metaTitle:
       'Electrical Installation in College Park, GA | D Best Electrical Service',
     metaDescription:
-      'Professional electrical installation services in College Park, GA. Wiring, outlets, fixtures, panels and more. Call 404-397-9782 for a quote.',
+      'Professional electrical installation services in College Park, GA. Wiring, outlets, fixtures, panels and more. Call 470-414-6473 for a quote.',
     heroImage:
       'https://images.pexels.com/photos/4981793/pexels-photo-4981793.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroAlt:
@@ -124,7 +125,7 @@ export const services: ServiceData[] = [
     metaTitle:
       'Electrical Repairs & Troubleshooting in College Park, GA | D Best Electrical Service',
     metaDescription:
-      'Expert electrical repairs and troubleshooting in College Park, GA. Dead outlets, tripping breakers, flickering lights diagnosed and fixed. Call 404-397-9782.',
+      'Expert electrical repairs and troubleshooting in College Park, GA. Dead outlets, tripping breakers, flickering lights diagnosed and fixed. Call 470-414-6473.',
     heroImage:
       'https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroAlt:
@@ -214,7 +215,7 @@ export const services: ServiceData[] = [
     metaTitle:
       'Electrical Wiring & Rewiring in College Park, GA | D Best Electrical Service',
     metaDescription:
-      'Professional electrical wiring and rewiring services in College Park, GA. Replace old wiring, add circuits, upgrade your system. Call 404-397-9782.',
+      'Professional electrical wiring and rewiring services in College Park, GA. Replace old wiring, add circuits, upgrade your system. Call 470-414-6473.',
     heroImage:
       'https://images.pexels.com/photos/3615735/pexels-photo-3615735.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroAlt:
@@ -304,7 +305,7 @@ export const services: ServiceData[] = [
     metaTitle:
       'Electrical Panel Services in College Park, GA | D Best Electrical Service',
     metaDescription:
-      'Electrical panel upgrade and replacement in College Park, GA. Increase capacity, add circuits, improve safety. Call 404-397-9782.',
+      'Electrical panel upgrade and replacement in College Park, GA. Increase capacity, add circuits, improve safety. Call 470-414-6473.',
     heroImage:
       'https://images.pexels.com/photos/28950842/pexels-photo-28950842.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroAlt:
@@ -394,7 +395,7 @@ export const services: ServiceData[] = [
     metaTitle:
       'Circuit Breaker Services in College Park, GA | D Best Electrical Service',
     metaDescription:
-      'Circuit breaker replacement and troubleshooting in College Park, GA. Fix tripping breakers, add circuits, improve safety. Call 404-397-9782.',
+      'Circuit breaker replacement and troubleshooting in College Park, GA. Fix tripping breakers, add circuits, improve safety. Call 470-414-6473.',
     heroImage:
       'https://images.pexels.com/photos/27928760/pexels-photo-27928760.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroAlt: 'Focused electrician adjusting circuit breaker panel',
@@ -483,7 +484,7 @@ export const services: ServiceData[] = [
     metaTitle:
       'Outlet & Switch Installation in College Park, GA | D Best Electrical Service',
     metaDescription:
-      'Outlet and switch installation in College Park, GA. Add outlets, install GFCI protection, replace old switches. Call 404-397-9782.',
+      'Outlet and switch installation in College Park, GA. Add outlets, install GFCI protection, replace old switches. Call 470-414-6473.',
     heroImage:
       'https://images.pexels.com/photos/5691494/pexels-photo-5691494.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroAlt:
@@ -573,7 +574,7 @@ export const services: ServiceData[] = [
     metaTitle:
       'Indoor Lighting Installation in College Park, GA | D Best Electrical Service',
     metaDescription:
-      'Indoor lighting installation in College Park, GA. Recessed lights, chandeliers, under-cabinet lighting, dimmers. Call 404-397-9782.',
+      'Indoor lighting installation in College Park, GA. Recessed lights, chandeliers, under-cabinet lighting, dimmers. Call 470-414-6473.',
     heroImage:
       'https://images.pexels.com/photos/7518747/pexels-photo-7518747.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroAlt: 'Stylish glass ball light fixtures hanging indoors with soft lighting',
@@ -662,7 +663,7 @@ export const services: ServiceData[] = [
     metaTitle:
       'Outdoor Lighting Installation in College Park, GA | D Best Electrical Service',
     metaDescription:
-      'Outdoor and landscape lighting installation in College Park, GA. Security lights, pathway lights, exterior fixtures. Call 404-397-9782.',
+      'Outdoor and landscape lighting installation in College Park, GA. Security lights, pathway lights, exterior fixtures. Call 470-414-6473.',
     heroImage:
       'https://images.pexels.com/photos/4933643/pexels-photo-4933643.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroAlt: 'A modern suburban home at dusk, beautifully lit with exterior lights',
@@ -751,7 +752,7 @@ export const services: ServiceData[] = [
     metaTitle:
       'Ceiling Fan Installation in College Park, GA | D Best Electrical Service',
     metaDescription:
-      'Ceiling fan installation and replacement in College Park, GA. Fan-rated boxes, switch wiring, remote controls. Call 404-397-9782.',
+      'Ceiling fan installation and replacement in College Park, GA. Fan-rated boxes, switch wiring, remote controls. Call 470-414-6473.',
     heroImage:
       'https://images.pexels.com/photos/6835102/pexels-photo-6835102.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroAlt:
@@ -841,7 +842,7 @@ export const services: ServiceData[] = [
     metaTitle:
       'Electrical Safety Inspections in College Park, GA | D Best Electrical Service',
     metaDescription:
-      'Electrical safety inspections and diagnostics in College Park, GA. Whole-home inspection, code compliance, safety assessment. Call 404-397-9782.',
+      'Electrical safety inspections and diagnostics in College Park, GA. Whole-home inspection, code compliance, safety assessment. Call 470-414-6473.',
     heroImage:
       'https://images.pexels.com/photos/10871929/pexels-photo-10871929.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroAlt:
@@ -938,11 +939,11 @@ export const serviceAreas: ServiceAreaData[] = [
     name: 'College Park, GA',
     primaryService: 'electrical-panel-services-in-college-park-ga',
     description:
-      'D Best Electrical Service is based in College Park, Georgia, and provides electrical panel upgrades, wiring repairs, outlet installations, and safety inspections to homeowners throughout the College Park area. As a local electrical service provider, we are familiar with the housing stock in the area — from mid-century homes that may benefit from panel upgrades to newer construction that needs additional circuits or fixture installations.',
+      'D Best Electrical Service is based in College Park, Georgia, and provides electrical panel upgrades, wiring repairs, outlet installations, and safety inspections. Whether you need a residential electrician in College Park for a home renovation, or an emergency electrician in College Park for an urgent daytime hazard, we are here to help. As a trusted local electrical contractor in College Park GA, we understand the local housing stock — from mid-century homes needing rewiring to newer construction requiring dedicated circuits.',
     metaTitle:
       'Electrician in College Park, GA | D Best Electrical Service',
     metaDescription:
-      'Local electrician serving College Park, GA. Panel upgrades, wiring, outlets, lighting, safety inspections. Call 404-397-9782.',
+      'Looking for an electrician near College Park GA? We are a local electrical contractor providing residential wiring, panels, and emergency electrician services. Call 470-414-6473.',
   },
   {
     slug: 'electrician-east-point-ga',
@@ -953,7 +954,7 @@ export const serviceAreas: ServiceAreaData[] = [
     metaTitle:
       'Electrician in East Point, GA | D Best Electrical Service',
     metaDescription:
-      'Electrical repairs and troubleshooting in East Point, GA. Outlets, breakers, lighting, safety inspections. Call 404-397-9782.',
+      'Electrical repairs and troubleshooting in East Point, GA. Outlets, breakers, lighting, safety inspections. Call 470-414-6473.',
   },
   {
     slug: 'electrician-union-city-ga',
@@ -964,7 +965,7 @@ export const serviceAreas: ServiceAreaData[] = [
     metaTitle:
       'Electrician in Union City, GA | D Best Electrical Service',
     metaDescription:
-      'Outlet installation, switches, lighting, and electrical repairs in Union City, GA. Call 404-397-9782.',
+      'Outlet installation, switches, lighting, and electrical repairs in Union City, GA. Call 470-414-6473.',
   },
   {
     slug: 'electrician-fairburn-ga',
@@ -975,7 +976,7 @@ export const serviceAreas: ServiceAreaData[] = [
     metaTitle:
       'Electrician in Fairburn, GA | D Best Electrical Service',
     metaDescription:
-      'Electrical wiring, rewiring, panel upgrades, and repairs in Fairburn, GA. Call 404-397-9782.',
+      'Electrical wiring, rewiring, panel upgrades, and repairs in Fairburn, GA. Call 470-414-6473.',
   },
   {
     slug: 'electrician-hapeville-ga',
@@ -986,7 +987,7 @@ export const serviceAreas: ServiceAreaData[] = [
     metaTitle:
       'Electrician in Hapeville, GA | D Best Electrical Service',
     metaDescription:
-      'Lighting installation, ceiling fans, outlets, and electrical repairs in Hapeville, GA. Call 404-397-9782.',
+      'Lighting installation, ceiling fans, outlets, and electrical repairs in Hapeville, GA. Call 470-414-6473.',
   },
   {
     slug: 'electrician-south-atlanta-ga',
@@ -997,7 +998,7 @@ export const serviceAreas: ServiceAreaData[] = [
     metaTitle:
       'Electrician in South Atlanta, GA | D Best Electrical Service',
     metaDescription:
-      'Circuit breaker services, panel upgrades, and electrical repairs in South Atlanta, GA. Call 404-397-9782.',
+      'Circuit breaker services, panel upgrades, and electrical repairs in South Atlanta, GA. Call 470-414-6473.',
   },
   {
     slug: 'electrician-riverdale-ga',
@@ -1008,7 +1009,7 @@ export const serviceAreas: ServiceAreaData[] = [
     metaTitle:
       'Electrician in Riverdale, GA | D Best Electrical Service',
     metaDescription:
-      'Ceiling fan installation, lighting, outlets, and electrical repairs in Riverdale, GA. Call 404-397-9782.',
+      'Ceiling fan installation, lighting, outlets, and electrical repairs in Riverdale, GA. Call 470-414-6473.',
   },
   {
     slug: 'electrician-peachtree-city-ga',
@@ -1019,7 +1020,7 @@ export const serviceAreas: ServiceAreaData[] = [
     metaTitle:
       'Electrician in Peachtree City, GA | D Best Electrical Service',
     metaDescription:
-      'Outdoor lighting, landscape lighting, and electrical services in Peachtree City, GA. Call 404-397-9782.',
+      'Outdoor lighting, landscape lighting, and electrical services in Peachtree City, GA. Call 470-414-6473.',
   },
   {
     slug: 'electrician-lanett-al',
@@ -1030,7 +1031,7 @@ export const serviceAreas: ServiceAreaData[] = [
     metaTitle:
       'Electrician in Lanett, AL | D Best Electrical Service',
     metaDescription:
-      'Local electrician serving Lanett, AL. Electrical repairs, panel upgrades, wiring, outlets, and lighting. Call 404-397-9782.',
+      'Local electrician serving Lanett, AL. Electrical repairs, panel upgrades, wiring, outlets, and lighting. Call 470-414-6473.',
   },
 ];
 
@@ -1043,7 +1044,7 @@ export const generalFaqs = [
   {
     question: 'How do I schedule electrical work?',
     answer:
-      'Call us at 404-397-9782. Tell us what you need, and we will arrange a time to visit your home, assess the work, and schedule the job.',
+      'Call us at 470-414-6473. Tell us what you need, and we will arrange a time to visit your home, assess the work, and schedule the job.',
   },
   {
     question: 'Do you provide free estimates?',
@@ -1058,7 +1059,7 @@ export const generalFaqs = [
   {
     question: 'Are you licensed and insured?',
     answer:
-      'We are committed to safe, code-compliant work. Please call us at 404-397-9782 to discuss any specific questions about credentials or insurance for your project.',
+      'We are committed to safe, code-compliant work. Please call us at 470-414-6473 to discuss any specific questions about credentials or insurance for your project.',
   },
   {
     question: 'Can you help with an electrical emergency?',
@@ -1073,7 +1074,7 @@ export const generalFaqs = [
   {
     question: 'Do you work on commercial properties?',
     answer:
-      'Our primary focus is residential electrical work. Call us at 404-397-9782 to discuss your specific needs and we will let you know if we can help.',
+      'Our primary focus is residential electrical work. Call us at 470-414-6473 to discuss your specific needs and we will let you know if we can help.',
   },
 ];
 
@@ -1109,7 +1110,7 @@ export const serviceProcess = [
     icon: 'Phone',
     title: 'Contact Us',
     description:
-      'Call 404-397-9782 and tell us what you need. We will ask about the issue, the space, and your goals for the project.',
+      'Call 470-414-6473 and tell us what you need. We will ask about the issue, the space, and your goals for the project.',
     step: '01',
   },
   {

@@ -9,7 +9,7 @@ export default function ContactPage() {
     <>
       <SEO
         title="Contact D Best Electrical Service | College Park, GA Electrician"
-        description="Contact D Best Electrical Service in College Park, GA. Call 404-397-9782 or send us a message. Located at 1102 Dayna Dr, College Park, GA 30349."
+        description="Contact D Best Electrical Service in College Park, GA. Call 470-414-6473 or send us a message. Located at 1102 Dayna Dr, College Park, GA 30349."
         canonicalPath="contact"
       />
       <PageHero
@@ -79,11 +79,41 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <div className="text-xs font-bold text-electric-600 uppercase tracking-wide mb-1">
-                      Schedule a Visit
+                      Business Hours
+                    </div>
+                    <div className="text-sm text-navy-900 font-semibold mb-1">
+                      Mon-Fri: 8:00 AM - 6:00 PM
                     </div>
                     <div className="text-sm text-charcoal-600">
-                      Call to arrange a time that works for you. For urgent safety concerns, call
-                      us right away.
+                      Sat: By Appointment <br /> Sun: Closed
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-5 rounded-xl border border-charcoal-100">
+                  <div className="w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-navy-700" />
+                  </div>
+                  <div>
+                    <div className="text-xs font-bold text-electric-600 uppercase tracking-wide mb-1">
+                      Service Area
+                    </div>
+                    <div className="text-sm text-charcoal-600">
+                      College Park, East Point, Union City, Fairburn, Hapeville, South Atlanta, Riverdale, and Peachtree City.
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-5 rounded-xl bg-red-50 border border-red-100 mt-4">
+                  <div className="w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-red-600" />
+                  </div>
+                  <div>
+                    <div className="text-xs font-bold text-red-600 uppercase tracking-wide mb-1">
+                      Urgent Safety Concerns?
+                    </div>
+                    <div className="text-sm text-charcoal-800">
+                      For serious issues like sparking panels or burning smells during business hours, <a href={businessInfo.phoneLink} className="font-bold text-red-600 hover:text-red-700 underline">call us right away</a>.
                     </div>
                   </div>
                 </div>

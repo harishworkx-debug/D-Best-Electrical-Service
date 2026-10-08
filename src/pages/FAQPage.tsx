@@ -11,7 +11,7 @@ export default function FAQPage() {
     <>
       <SEO
         title="FAQs | D Best Electrical Service - College Park, GA"
-        description="Frequently asked questions about electrical services, scheduling, service areas, and preparing for an electrician visit in College Park, GA. Call 404-397-9782."
+        description="Frequently asked questions about electrical services, scheduling, service areas, and preparing for an electrician visit in College Park, GA. Call 470-414-6473."
         canonicalPath="faqs"
       />
       <PageHero

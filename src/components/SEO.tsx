@@ -6,11 +6,12 @@ interface SEOProps {
   description: string;
   canonicalPath?: string;
   ogType?: string;
+  breadcrumbs?: Array<{name: string, url: string}>;
 }
 
 const BASE_URL = 'https://dbestelectricalservice.com/';
 
-export default function SEO({ title, description, canonicalPath, ogType = 'website' }: SEOProps) {
+export default function SEO({ title, description, canonicalPath, ogType = 'website', breadcrumbs }: SEOProps) {
   const location = useLocation();
   const canonical = canonicalPath ? `${BASE_URL}${canonicalPath}` : `${BASE_URL}${location.pathname}`;
 
@@ -53,7 +54,31 @@ export default function SEO({ title, description, canonicalPath, ogType = 'websi
       document.head.appendChild(link);
     }
     link.href = canonical;
-  }, [title, description, canonical, ogType]);
+
+    if (breadcrumbs && breadcrumbs.length > 0) {
+      let script = document.querySelector('script#breadcrumb-schema') as HTMLScriptElement;
+      if (!script) {
+        script = document.createElement('script');
+        script.id = 'breadcrumb-schema';
+        script.type = 'application/ld+json';
+        document.head.appendChild(script);
+      }
+      const schema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": breadcrumbs.map((bc, idx) => ({
+          "@type": "ListItem",
+          "position": idx + 1,
+          "name": bc.name,
+          "item": bc.url
+        }))
+      };
+      script.text = JSON.stringify(schema);
+    } else {
+      const script = document.querySelector('script#breadcrumb-schema');
+      if (script) script.remove();
+    }
+  }, [title, description, canonical, ogType, breadcrumbs]);
 
   return null;
 }

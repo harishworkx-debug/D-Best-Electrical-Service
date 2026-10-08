@@ -62,13 +62,13 @@ export default function Header() {
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
             >
-              <button
-                type="button"
+              <Link
+                to="/electrical-services"
                 className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors rounded-md"
               >
                 Services
                 <ChevronDown className={`w-4 h-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
-              </button>
+              </Link>
               {servicesOpen && (
                 <div className="absolute top-full left-0 w-80 pt-2 animate-slide-down">
                   <div className="bg-white rounded-xl shadow-2xl border border-charcoal-100 overflow-hidden">
@@ -93,13 +93,13 @@ export default function Header() {
               onMouseEnter={() => setAreasOpen(true)}
               onMouseLeave={() => setAreasOpen(false)}
             >
-              <button
-                type="button"
+              <Link
+                to="/areas-we-serve"
                 className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors rounded-md"
               >
                 Service Areas
                 <ChevronDown className={`w-4 h-4 transition-transform ${areasOpen ? 'rotate-180' : ''}`} />
-              </button>
+              </Link>
               {areasOpen && (
                 <div className="absolute top-full left-0 w-64 pt-2 animate-slide-down">
                   <div className="bg-white rounded-xl shadow-2xl border border-charcoal-100 overflow-hidden">
@@ -170,9 +170,9 @@ export default function Header() {
             </Link>
 
             <div>
-              <div className="block px-4 py-3 text-sm font-medium text-white/90">
+              <Link to="/electrical-services" className="block px-4 py-3 text-sm font-medium text-white/90 hover:bg-white/5 rounded-lg">
                 Services
-              </div>
+              </Link>
               <div className="ml-4 border-l border-white/10">
                 {services.map((service) => (
                   <Link
@@ -187,9 +187,9 @@ export default function Header() {
             </div>
 
             <div>
-              <div className="block px-4 py-3 text-sm font-medium text-white/90">
+              <Link to="/areas-we-serve" className="block px-4 py-3 text-sm font-medium text-white/90 hover:bg-white/5 rounded-lg">
                 Service Areas
-              </div>
+              </Link>
               <div className="ml-4 border-l border-white/10">
                 {serviceAreas.map((area) => (
                   <Link

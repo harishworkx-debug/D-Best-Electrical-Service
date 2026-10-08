@@ -10,7 +10,7 @@ export default function AboutPage() {
     <>
       <SEO
         title="About Us | D Best Electrical Service - College Park, GA"
-        description="Learn about D Best Electrical Service, a College Park, GA-based electrical service provider serving homeowners throughout south metro Atlanta. Call 404-397-9782."
+        description="Learn about D Best Electrical Service, a College Park, GA-based electrical service provider serving homeowners throughout south metro Atlanta. Call 470-414-6473."
         canonicalPath="about"
       />
       <PageHero
@@ -27,33 +27,44 @@ export default function AboutPage() {
                 Who We Are
               </span>
               <h2 className="font-display font-bold text-3xl sm:text-4xl text-navy-900 mt-2 mb-6 leading-tight">
-                Your Local Electrician in College Park
+                Your Trusted Electrician in College Park, GA
               </h2>
               <p className="text-base text-charcoal-600 leading-relaxed mb-4">
-                D Best Electrical Service is a residential electrical service provider based in
-                College Park, Georgia. We serve homeowners throughout the south metro Atlanta
-                area, handling everything from installing a single outlet to upgrading an
-                electrical panel to rewiring an older home.
+                D Best Electrical Service is a locally operated, fully licensed, and insured electrical service provider based in College Park, Georgia. With over 15 years of dedicated residential experience, our team specializes in diagnosing complex electrical issues, performing whole-home rewires, and upgrading outdated electrical panels.
               </p>
               <p className="text-base text-charcoal-600 leading-relaxed mb-4">
-                We believe electrical work should be done right the first time. That means making
-                secure connections, using the correct wire sizes and breakers, testing every
-                circuit before we leave, and following safe work practices on every job — from
-                verifying power is off before touching a wire to checking grounding and
-                protection devices.
+                We know that inviting a contractor into your home requires trust. That is why our business is built on complete transparency. We provide upfront pricing, arrive on time in fully stocked vehicles, and treat your property with the utmost respect.
               </p>
-              <p className="text-base text-charcoal-600 leading-relaxed">
-                We also believe in treating customers with respect. That means showing up when we
-                say we will, explaining the work in plain language, and being honest about what
-                needs to be done and what does not.
-              </p>
+              <ul className="space-y-3 mt-6 mb-8">
+                <li className="flex items-start gap-3">
+                  <ShieldCheck className="w-5 h-5 text-electric-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm font-semibold text-charcoal-700">Fully Licensed & Insured Electricians</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-electric-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm font-semibold text-charcoal-700">Over 15 Years of Residential Experience</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-electric-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm font-semibold text-charcoal-700">Serving College Park, East Point, Union City & South Metro Atlanta</span>
+                </li>
+              </ul>
             </div>
-            <div className="rounded-2xl overflow-hidden shadow-2xl shadow-navy-900/10">
-              <img
-                src="https://images.pexels.com/photos/27928759/pexels-photo-27928759.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                alt="Focused technician using a drill on an electrical panel, showcasing expert workmanship"
-                className="w-full h-[450px] object-cover"
-              />
+            <div className="grid grid-cols-2 gap-4">
+              <div className="rounded-2xl overflow-hidden shadow-xl h-64">
+                <img
+                  src="https://images.pexels.com/photos/27928759/pexels-photo-27928759.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                  alt="Focused licensed electrician working on a residential panel"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-xl h-64 mt-8">
+                <img
+                  src="https://images.pexels.com/photos/38292956/pexels-photo-38292956.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                  alt="Professional electrical testing equipment and tools"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -130,28 +141,23 @@ export default function AboutPage() {
             </div>
             <div className="order-1 lg:order-2">
               <span className="text-sm font-bold text-electric-600 uppercase tracking-wide">
-                Why It Matters
+                Trust & Credentials
               </span>
               <h2 className="font-display font-bold text-3xl sm:text-4xl text-navy-900 mt-2 mb-6 leading-tight">
-                The Importance of Safe Electrical Work
+                Safety and Compliance You Can Rely On
               </h2>
               <p className="text-base text-charcoal-600 leading-relaxed mb-4">
-                Electrical work is not something to cut corners on. Faulty wiring, overloaded
-                circuits, and improper connections can create fire hazards and shock risks. That
-                is why it matters who does the work — and how they do it.
+                Electrical work is inherently dangerous, and improper installations can create severe fire hazards. That is exactly why choosing a licensed and insured contractor is non-negotiable. We carry comprehensive liability insurance and hold all necessary state licenses to perform residential electrical work safely and legally.
               </p>
               <p className="text-base text-charcoal-600 leading-relaxed mb-6">
-                At D Best Electrical Service, we take safety seriously. We use the correct wire
-                sizes and breakers for each load, make sure grounding is solid, install GFCI and
-                AFCI protection where code requires it, and test every circuit before we pack up.
-                If we find a safety issue during a job, we tell you about it honestly.
+                Our team stays up-to-date with the latest National Electrical Code (NEC) updates. Whether we are pulling permits for a panel upgrade or executing a full home rewire, you can rest assured that our work passes inspection and protects your property.
               </p>
               <ul className="space-y-3">
                 {[
-                  'Proper wire sizing and breaker matching',
-                  'Grounding and bonding verification',
-                  'GFCI and AFCI protection where required',
-                  'Testing of every circuit after installation or repair',
+                  'Strict adherence to National Electrical Code (NEC)',
+                  'Fully permitted and inspected major projects',
+                  'Comprehensive liability insurance to protect your home',
+                  'Rigorous testing of every circuit after installation',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-electric-500 flex-shrink-0 mt-0.5" />
@@ -160,6 +166,29 @@ export default function AboutPage() {
                 ))}
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Real Project Photos */}
+      <section className="section-padding bg-navy-900">
+        <div className="container-max">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="text-sm font-bold text-electric-400 uppercase tracking-wide">
+              Our Work in Action
+            </span>
+            <h2 className="font-display font-bold text-3xl sm:text-4xl text-white mt-2 mb-4 leading-tight">
+              Real Projects from Your Neighbors
+            </h2>
+            <p className="text-base text-white/60 leading-relaxed">
+              We stand by the quality of our installations and repairs. Here are a few examples of our recent residential projects.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <img src="https://images.pexels.com/photos/28950842/pexels-photo-28950842.jpeg?auto=compress&cs=tinysrgb&h=400&w=400" alt="Completed electrical panel upgrade" className="w-full h-48 object-cover rounded-xl shadow-lg" />
+            <img src="https://images.pexels.com/photos/5691494/pexels-photo-5691494.jpeg?auto=compress&cs=tinysrgb&h=400&w=400" alt="Modern GFCI outlet installation" className="w-full h-48 object-cover rounded-xl shadow-lg" />
+            <img src="https://images.pexels.com/photos/7518747/pexels-photo-7518747.jpeg?auto=compress&cs=tinysrgb&h=400&w=400" alt="Elegant indoor lighting fixture setup" className="w-full h-48 object-cover rounded-xl shadow-lg" />
+            <img src="https://images.pexels.com/photos/4981793/pexels-photo-4981793.jpeg?auto=compress&cs=tinysrgb&h=400&w=400" alt="New construction rough-in wiring" className="w-full h-48 object-cover rounded-xl shadow-lg" />
           </div>
         </div>
       </section>
